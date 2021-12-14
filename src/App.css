@@ -1,0 +1,838 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+@font-face {
+  font-family: AdobeClean-Bold;
+  src: url("./AdobeCleanBold.otf");
+}
+@font-face {
+  font-family: TRY Vesterbro Bold;
+  src: url("./TRYVesterbro-Bold.otf");
+}
+body{
+  font-family: "Lato", sans-serif;
+}
+.container-fluid{
+  overflow: hidden;
+}
+
+/*Mobile and Tablets*/
+@media only screen and (min-width: 320px) and (max-width: 640px) {
+
+  .container-fluid {
+    padding: 0;
+  }
+  nav {
+    position: relative;
+  }
+  .col-custom {
+    overflow: hidden;
+  }
+  .col-cust-2 {
+    height: 80vh;
+  }
+  #floatingInput {
+    font-size: 16px;
+    border-radius: 10px;
+    border-color: #d1d1d1;
+    width: 80%;
+    margin-left: 3%;
+    height: 40px;
+  }
+  input[type="text"]::placeholder{
+    font-size: 15.4px;
+  }
+  .field-wrapper label {
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    position: absolute;
+    top: 2px;
+    display: inline-block;
+    background: #FFF;
+    margin: 8px 5px;
+    height: fit-content;
+    line-height: 1.4em;
+    padding: 0 10px;
+    transition: all .2s linear;
+    margin-left: 4%;
+    width: fit-content;
+}
+  #branding {
+    font-size: 40px;
+    font-weight: bold;
+  }
+  #levelLE, #levelEL{
+    width: 34.4px;
+    height: 23px;
+  }
+  #levelV {
+    height: 35px;
+  }
+  #subhead {
+    font-size: 14px;
+    width: 80%;
+  }
+  #head {
+    font-size: 23px;
+  }
+  .form-floating {
+    width: 65%;
+  }
+  #affir_para {
+    font-size: 12px;
+    width: 90%;
+  }
+  #chooseType1 {
+    visibility: visible;
+    font-size: 14px;
+  }
+  .buttons button {
+    margin-bottom: 10px;
+    margin-right: 25px;
+    font-size: 13px;
+    height: 30px;
+  }
+  .footer1 {
+    visibility: hidden;
+
+  }
+  label {
+    font-size: 14px;
+    width: max-content;
+  }
+  #sendFeedbackBrand {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    border-right: 0;
+    padding: 8px;
+    font-size: 13px;
+  }
+  #sendFeedbackImg {
+    visibility: hidden;
+  }
+  .footer{
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 100%;
+  }
+  #footerimg {
+    visibility: hidden;
+  }
+  .footer1 {
+    visibility: hidden;
+
+  }
+  .footer2 {
+    
+    visibility: visible;
+    position: fixed;
+  }
+  #subhead,
+  #head,
+  .buttons,
+  .chooseType,
+  #affir_para {
+    padding-left: 20px;
+    padding-right: 15px;
+  }
+  .one-edge-shadow {
+    -webkit-box-shadow: 0 3px  10px  #00000021;
+     -moz-box-shadow: 0 3px  10px  #00000021;
+          box-shadow: 0 3px 10px #00000021;
+  }
+  .floating {
+    margin-left: 20px;
+  }
+  #subscribeinput {
+    margin-left: 20px;
+    width: 60%;
+  }
+  #subscribeinput::placeholder {
+    font-size: 9.5px;
+    color: #FFFFFF;
+  }
+  #btnsubscribe {
+    width: 127px;
+    padding-right: 10px;
+    font-size: 16px;
+  }
+  #invisiblePara1,
+  #invisiblePara2 {
+    position: absolute;
+    top: 22%;
+    font-size: 26px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    height: fit-content;
+    padding-left: 10px;
+    padding-right: 15px;
+    transform: none !important;
+  }
+  hr {
+    position: absolute;
+    width: 75%;
+    top: 60%;
+    left: 12%;
+  }
+  #reloadbtn {
+    position: absolute;
+    top: 59.6%;
+    left: 45%;
+    height: 35px;
+    width: 35px;
+  }
+  #like,
+  #unlike {
+    position: absolute;
+    top: 68%;
+    left: 16%;
+  }
+  #unlike {
+    left: 55%;
+  }
+  #play {
+    width: 60px;
+  }
+  .subscribeDiv{
+    background-color: #F9CE47;
+    margin-left: auto;
+  }
+  .field-wrapper {
+    margin: 0px 10px;
+  }
+  #before-input{
+    margin-bottom: 0!important;
+  }
+}
+
+@media only screen and (min-width: 641px) and (max-width: 989px) {
+  .container-fluid {
+    
+    padding: 0;
+  }
+  nav {
+    position: relative;
+  }
+  .col-custom {
+    overflow: hidden;
+  }
+  .col-cust-2 {
+    height: 97vh;
+  }
+  #floatingInput {
+    border-radius: 10px;
+    border-color: #d1d1d1;
+    width: 80%;
+    height: 50px;
+    margin-left: 1%;
+  }
+  .field-wrapper label {
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    position: absolute;
+    top: 2px;
+    display: inline-block;
+    background: #FFF;
+    margin: 8px 5px;
+    height: fit-content;
+    line-height: 1.4em;
+    padding: 0 10px;
+    transition: all .2s linear;
+    margin-left: 2%;
+}
+  #branding {
+    font-size: 45px;
+    font-weight: bold;
+    padding-left: 0;
+  }
+  #levelLE, #levelEL{
+    width: 44.72px;
+    height: 30px;
+  }
+  #levelV {
+    height: 45px;
+  }
+  #subhead {
+    font-size: 20px;
+    width: 80%;
+  }
+  #head {
+    font-size: 40px;
+  }
+  .floating {
+    width: 60%;
+    padding-left: 35px;
+  }
+  #affir_para {
+    font-size: 14px;
+    width: 70%;
+  }
+  #chooseType1 {
+    visibility: visible;
+  }
+  .footer{
+    padding-top: 10px; 
+     padding-bottom: 10px;
+     position: fixed;
+     width: 100%;
+
+  }
+  .footer1 {
+    visibility: hidden;
+  }
+  label {
+    font-size: 15px;
+    width: max-content;
+    margin-left: 35px;
+  }
+  #floatingInput {
+    border-radius: 10px;
+    border-color: #d1d1d1;
+    
+  }
+  #sendFeedbackBrand {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    border-right: 0;
+    padding: 8px;
+    font-size: 15px;
+  }
+  #sendFeedbackImg {
+    visibility: hidden;
+  }
+  #subhead,
+  #head,
+  .buttons,
+  .chooseType,
+  #affir_para {
+    padding-left: 50px;
+    padding-right: 15px;
+  }
+  .floating {
+    margin-left: 20px;
+  }
+  #subscribeinput {
+    margin-left: 90px;
+    width: 60%;
+  }
+  #subscribeinput::placeholder {
+    font-size: 17px;
+  }
+  #btnsubscribe {
+    width: 150px;
+    margin-right: 10px;
+    padding-right: 10px;
+    margin-left: 30px;
+    border-radius: 5px;
+  }
+  #invisiblePara1,
+  #invisiblePara2 {
+    position: absolute;
+    top: 33%;
+    font-size: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    transform: none !important;
+  }
+  hr {
+    position: absolute;
+    top: 57.5%;
+    left: 50px;
+    width: 88%;
+  }
+  #reloadbtn {
+    position: absolute;
+   top: 57%;
+    left: 50%;
+    height: 40px;
+    width: 40px;
+  }
+  #like,
+  #unlike {
+    position: absolute;
+    top: 65%;
+    left: 35%;
+  }
+  #unlike {
+    left: 55%;
+  }
+  #play {
+    width: 60px;
+  }
+  .buttons button {
+    margin-right: 8px;
+  }
+  form{
+    margin-bottom: 20px;
+  }
+  .subscribeDiv{
+    background-color: transparent;
+  }
+  input[type="text"]::placeholder{
+    font-size: 17.4px;
+  }
+  .field-wrapper {
+    margin: 30px 10px;
+  }
+}
+
+/*Desktop*/
+@media only screen and (min-width: 990px) {
+  .container-fluid {
+    height: 100vh;
+    padding: 0;
+  }
+  .col-custom {
+    height: 100vh;
+  }
+  .col-cust-2 {
+    height: 100vh;
+  }
+  #branding {
+    margin-left: 20px;
+  }
+  #levelLE, #levelEL{
+    width: 44.72px;
+    height: 30px;
+  }
+  #levelV {
+    height: 45px;
+  }
+  #subhead {
+    font-size: 20px;
+    width: 70%;
+  }
+  #head {
+    font-size: 45px;
+  }
+  .floating {
+    width: 40%;
+  }
+  #affir_para {
+    font-size: 14px;
+    width: 76%;
+  }
+  #chooseType1 {
+    visibility: visible;
+    margin-top: 10px;
+  }
+  .footer{
+  
+    padding-top: 10px; 
+     padding-bottom: 10px;
+     
+  }
+  .footer1{
+    visibility: visible;
+    height: 72px;
+    position: fixed;
+    bottom: 0;
+    width: 58.5%;
+  }
+  .footer2{
+    visibility: hidden;
+  }
+  #sendFeedbackBrand,
+  #sendFeedbackImg {
+    visibility: hidden;
+  }
+  #sendFeedbackImg {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    padding-right: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  #subhead,
+  #head,
+  .buttons,
+  .chooseType,
+  #affir_para {
+    padding-left: 10%;
+  }
+  .floating {
+    margin-left: 10%;
+  }
+  #subscribeinput {
+    margin-left: 16%;
+    width: 50%;
+  }
+  #floatingInput {
+    border-radius: 10px;
+    border-color: #d1d1d1;
+    width: 80%;
+    margin-left: 9%;
+    height: 50px;
+  }
+  #btnsubscribe {
+    width: 150px;
+    margin-left: 30px;
+    border-radius: 5px;
+  }
+  .one-edge-shadow {
+    -webkit-box-shadow:  -3px 0 6px  #00000021;
+     -moz-box-shadow:  -3px 0 6px  #00000021;
+          box-shadow:  -3px 0 6px #00000021;
+          padding-left: 0;
+          padding-right: 0;
+  }
+  #invisiblePara1,
+  #invisiblePara2 {
+    position: absolute;
+    top: 58%;
+    font-size: 42px;
+    line-height: 1.2;
+    padding-left: 6%;
+    padding-right: 6%;
+    width: 100%;
+  }
+  hr {
+    position: absolute;
+    width: 75%;
+    top: 78%;
+    left: 12%;
+  }
+  #reloadbtn {
+    position: absolute;
+    top: 77%;
+    left: 45%;
+    height: 42px;
+    width: 42px;
+  }
+  #like,
+  #unlike {
+    position: absolute;
+    top: 85%;
+    left: 27.5%;
+  }
+  #unlike {
+    left: 50%;
+  }
+  #play {
+    width: 80px;
+  }
+  #footerimg {
+    position: absolute;
+    top: 0;
+    height: 25px;
+    left: 7.5%;
+  }
+  .buttons button {
+    margin-right: 8px;
+  }
+  .field-wrapper label {
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    position: absolute;
+    top: 2px;
+    display: inline-block;
+    background: #FFF;
+    margin: 8px 5px;
+    height: fit-content;
+    line-height: 1.4em;
+    padding: 0 10px;
+    transition: all .2s linear;
+    margin-left: 10%;
+}
+#reloadimg:hover {
+  transform: rotate(180deg);
+}
+.img-adjust{
+  height: 100vh;
+  object-fit: cover;
+  object-position: 40% 70%;
+}
+input[type="text"]::placeholder{
+  font-size: 17.4px;
+}
+.field-wrapper {
+  margin: 30px 10px;
+}
+}
+@media only screen and (min-width: 990px) and (max-width: 1250px) {
+  #like{
+    left:24%;
+  }
+  #subscribeinput::placeholder {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 990px) and (max-width: 1060px) {
+  #unlike{
+    left:52%;
+  }
+  
+}
+
+@media only screen and (max-width: 410px) and (min-height: 750px) {
+  .col-cust-2{
+    height: 73vh !important;
+  }
+}
+
+@media only screen and (max-width: 410px) and (min-height: 800px) {
+  .col-cust-2{
+    height: 65vh !important;
+  }
+}
+
+
+
+/*Basic for all*/
+
+.container-fluid {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.col-custom {
+  position: relative;
+}
+
+.col-cust-2 {
+  position: relative;
+  border-right: 5px solid #d1d1d1;
+}
+
+#branding {
+  font-family: "AdobeClean-Bold", sans-serif;
+  font-weight: 790;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#levelV {
+  transition: transform 0.25s linear;
+}
+
+#levelV:hover {
+  transform: rotate(132deg);
+}
+
+#subhead {
+  color: #7356E8;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+}
+
+#head {
+  color: #0f0a39;
+  font-family: "TRY Vesterbro Bold", serif;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+#affirmation {
+  text-decoration: underline;
+  color: #FDC300;
+}
+
+.floating {
+  position: relative;
+}
+
+#floatingInput {
+  border-radius: 10px;
+  border-color: #d1d1d1;
+  padding-left: 10px;
+  border: 1px solid #D1D1D1;
+}
+
+label {
+  font-family: "lato", serif;
+  font-weight: 300;
+  color: #0f0a39;
+}
+
+
+
+.buttons {
+  display: inline-block;
+
+}
+
+.buttons button {
+  background-color: #f7f5f5;
+  border-radius: 8px;
+  
+}
+
+.chooseType {
+  color: #0f0a39;
+  opacity: 0.6;
+  visibility: hidden;
+  font-size: 16px;
+}
+
+.footer {
+  bottom: 0;
+  background-color: #7356E8;
+  /* width: 100%; */
+  display: flex;
+  align-items: center;
+}
+
+#affir_para {
+  color: #0f0a39;
+  font-family: "lato", sans-serif;
+  font-weight: 300;
+}
+
+#subscribeinput {
+  border: none;
+  background-color: transparent;
+  color:#FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+  border-radius: 0;
+}
+
+#subscribeinput::placeholder {
+  color: #FFFFFF;
+  font-family: "lato", sans-serif;
+}
+
+#btnsubscribe {
+  background-color: #F9CE47;
+  border: none;
+  color: white;
+  padding: 8px;
+  font-size: 18px;
+  font-family: 'Lato', sans-serif;
+}
+
+.feedback {
+  font-family: "lato", sans-serif;
+  background-color: #0f0a39;
+  opacity: 0.3;
+  color: white;
+  border-radius: 7px;
+}
+
+#invisiblePara1,
+#invisiblePara2 {
+  line-height: 1.2;
+  font-family: "lato", sans-serif;
+  font-weight: 400;
+  visibility: hidden;
+  text-align: center !important;
+  vertical-align: middle;
+  
+  
+}
+.qoutationMark{
+  font-family: "TRY Vesterbro Bold", serif;
+}
+
+hr {
+  visibility: hidden;
+}
+
+#reloadbtn {
+  background-color: #0f0a39;
+  border-radius: 7px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+
+#like,
+#unlike {
+  background-color: #0f0a39;
+  opacity: 0.3;
+  color: white;
+  border-radius: 7px;
+  border: none;
+  padding: 5px 20px 5px 25px;
+  visibility: hidden;
+  font-size: 16px;
+}
+#unlike {
+  visibility: hidden;
+}
+
+#like:hover,
+#unlike:hover {
+  background-color: #0f0a39;
+  opacity: 1;
+}
+
+#reloadimg {
+  transition: transform 0.25s linear;
+}
+
+
+
+
+#close {
+  float: right;
+  border-radius: 100%;
+  border: none;
+  color: black;
+  font-size: 12px;
+}
+.btn{
+  font-family: 'Lato', sans-serif;
+}
+
+.field-wrapper {
+  display: block;
+  position: relative;
+  outline: none;
+  width: 100%;
+}
+
+
+.field-wrapper.focused label {
+  transition: all .2s linear;
+  top: -20px;
+  outline: none;
+} 
+
+
+
+input[type="text"]::placeholder{
+  font-family: 'Lato', sans-serif;
+}
+input[type="text"]{
+  font-family: 'Lato', sans-serif;
+}
+input:focus{
+  outline: none;
+}
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  min-width: 95%;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+button.active{
+  background-color: rgba(115, 86, 232, 0.19); 
+}
+.subscribeThanks{
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  color: #FFFFFF;
+  font-size: 20px;
+  text-align: center;
+}
